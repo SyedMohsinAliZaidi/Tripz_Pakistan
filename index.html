@@ -11,10 +11,16 @@
       referrerpolicy="no-referrer"
     />
     <title>Vite + React</title>
+    <base href="/" />
     <script type="module" crossorigin src="/Tripz_Pakistan/assets/index-CZ_-EuYw.js"></script>
     <link rel="stylesheet" crossorigin href="/Tripz_Pakistan/assets/index-CFaZiZvW.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      if (location.hostname !== 'localhost') {
+        document.querySelector('base').setAttribute('href', '/Tripz_Pakistan/');
+      }
+    </script>
   </body>
 </html>
